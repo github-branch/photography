@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'photographyClub'`, () => {
+  it(`should have as title 'photography'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('photographyClub');
+    expect(app.title).toEqual('photography');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('photographyClub app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('photography app is running!');
   });
 });
